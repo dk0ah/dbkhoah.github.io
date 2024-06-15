@@ -48,8 +48,9 @@ http://www.templatemo.com/tm-512-moonlight
             font-size: 1.5em;
             margin-bottom: 10px;
         }
-        .game-images horizontal {
-          display: block;
+         .game-images {
+            display: flex;
+            flex-wrap: wrap;
           width: auto;
           height: auto;
         }
@@ -59,6 +60,15 @@ http://www.templatemo.com/tm-512-moonlight
             margin: 5px;
             border-radius: 8px;
         }
+             @media (min-width: 600px) {
+            .game-images img {
+                max-width: calc(50% - 10px); /* Two images per row on medium screens */
+            }
+        }
+        @media (min-width: 900px) {
+            .game-images img {
+                max-width: calc(25% - 10px); /* Four images per row on large screens */
+            }
    
         }
     </style>
