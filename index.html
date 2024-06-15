@@ -44,16 +44,28 @@ http://www.templatemo.com/tm-512-moonlight
             margin: 5px;
             border-radius: 8px;
         }
-        @media (min-width: 600px) {
-            .game-images img {
-                max-width: calc(50% - 10px); /* Two images per row on medium screens */
-            }
+         /* Media query for images with landscape (16:9) aspect ratio */
+    @media (min-width: 600px) {
+        .game-images img.landscape {
+            max-width: calc(50% - 10px); /* Two images per row on medium screens */
         }
-        @media (min-width: 900px) {
-            .game-images img {
-                max-width: calc(25% - 10px); /* Four images per row on large screens */
-            }
+    }
+    @media (min-width: 900px) {
+        .game-images img.landscape {
+            max-width: calc(25% - 10px); /* Four images per row on large screens */
         }
+    }
+    /* Media query for images with portrait (9:16) aspect ratio */
+    @media (min-width: 600px) {
+        .game-images img.portrait {
+            max-width: calc(25% - 10px); /* Four images per row on medium screens */
+        }
+    }
+    @media (min-width: 900px) {
+        .game-images img.portrait {
+            max-width: calc(50% - 10px); /* Two images per row on large screens */
+        }
+    }
     </style>
 
 <body>
@@ -310,17 +322,17 @@ http://www.templatemo.com/tm-512-moonlight
         <div class="game-section">
             <h2>Build Block Craft (UI/UX, Content Update, Gameplay Concept)</h2>
             <div class="game-images horizontal">
-                          <img src="img/Craft 1.png" alt="">
-                          <img src="img/Craft 2.png" alt="">
-                          <img src="img/Craft 3.png alt="">
+                          <img src="img/Craft 1.png" class="portrait" alt="">
+                          <img src="img/Craft 2.png" class="portrait" alt="">
+                          <img src="img/Craft 3.png" class="portrait" alt="">
             </div>
         </div>
                     <div class="game-section">
             <h2>Phom Card Game (UI/UX, Content Update, Monetization)</h2>
             <div class="game-images horizontal">
-                          <img src="img/Phom (1).png" alt="">
-                          <img src="img/Phom (2).png" alt="">
-                          <img src="img/Phom (3).png" alt="">
+                          <img src="img/Phom (1).png" class="portrait" alt="">
+                          <img src="img/Phom (2).png" class="portrait" alt="">
+                          <img src="img/Phom (3).png" class="portrait" alt="">
             </div>
         </div>
                 </div>
