@@ -23,6 +23,24 @@ http://www.templatemo.com/tm-512-moonlight
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
      <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
         .game-section {
             margin-bottom: 40px;
         }
@@ -34,38 +52,22 @@ http://www.templatemo.com/tm-512-moonlight
             display: flex;
             flex-wrap: wrap;
         }
-         .game-images.horizontal {
-            justify-content: space-between; /* Ensure even spacing between images */
-            align-items: center; /* Center items vertically */
-        }
         .game-images img {
             max-width: 100%;
             height: auto;
             margin: 5px;
             border-radius: 8px;
         }
-         /* Media query for images with landscape (16:9) aspect ratio */
-    @media (min-width: 600px) {
-        .game-images img.portrait {
-            max-width: calc(50% - 10px); /* Two images per row on medium screens */
+        @media (min-width: 600px) {
+            .game-images img {
+                max-width: calc(50% - 10px); /* Two images per row on medium screens */
+            }
         }
-    }
-    @media (min-width: 900px) {
-        .game-images img.portrait {
-            max-width: calc(25% - 10px); /* Four images per row on large screens */
+        @media (min-width: 900px) {
+            .game-images img {
+                max-width: calc(25% - 10px); /* Four images per row on large screens */
+            }
         }
-    }
-    /* Media query for images with portrait (9:16) aspect ratio */
-    @media (min-width: 600px) {
-        .game-images img.landscape {
-            max-width: calc(25% - 10px); /* Four images per row on medium screens */
-        }
-    }
-    @media (min-width: 900px) {
-        .game-images img.landscape {
-            max-width: calc(50% - 10px); /* Two images per row on large screens */
-        }
-    }
     </style>
 
 <body>
